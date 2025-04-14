@@ -27,7 +27,7 @@ protobuf==5.29.3
 pyarrow==19.0.0
 pydeck==0.9.1
 pyparsing==3.2.0
-pyqt==6.7.1
+pyqt5==5.15.9
 pyqt6-sip==13.9.1
 pysocks==1.7.1
 python-dateutil==2.9.0post0
@@ -57,3 +57,4 @@ wheel==0.45.1
 win_inet_pton==1.1.0
 wordcloud==1.9.4
 zipp==3.21.0
+
