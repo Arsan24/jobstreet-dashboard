@@ -2,7 +2,6 @@ altair==5.5.0
 attrs==24.3.0
 blinker==1.9.0
 bottleneck==1.4.2
-brotli-python==1.0.9
 cachetools==5.5.1
 certifi==2025.1.31
 charset-normalizer==3.3.2
