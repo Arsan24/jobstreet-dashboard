@@ -71,12 +71,12 @@ threadpoolctl==3.1.0
 toml==0.10.2
 tornado==6.1
 traitlets>=5.3
-typing_extensions==4.3.0
+typing-extensions==4.13.0
 tzdata==2022.1
 urllib3==1.26.10
 watchdog==2.1.6
 wcwidth==0.2.5
 wheel==0.37.1
-wordcloud==1.8.1
+wordcloud==1.9.3
 zipp==3.6.0
 pywin32>=301; sys_platform == "win32"  # Hanya diinstal di Windows
