@@ -107,17 +107,20 @@ with tab3:
 
     st.pyplot(fig)
 
-    st.subheader("Maximum Salary Distribution by Category")
+    st.subheader("Maximum Salary Distribution")
     # Filter out rows where Salary Max is 0 or NaN to ensure valid data
     valid_data = filtered_df[filtered_df['Salary Max'] > 0]
-    fig, ax = plt.subplots(figsize=(12, 5))
-    sns.boxplot(x='Category', y='Salary Max', data=valid_data, ax=ax)
-    
-    # Format y-axis to display as currency
-    ax.yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, _: f'Rp {x:,.0f}'))
+    fig, ax = plt.subplots(figsize=(10, 4))
+    ax.hist(valid_data['Salary Max'], bins=20, color='blue', edgecolor='black')
+    ax.set_title('Maximum Salary Distribution')
+    ax.set_xlabel('Maximum Salary')
+    ax.set_ylabel('Job Count')
 
-    ax.set_xticklabels(ax.get_xticklabels(), rotation=45)
+    # Format x-axis to display as currency
+    ax.xaxis.set_major_formatter(ticker.FuncFormatter(lambda x, _: f'Rp {x:,.0f}'))
+
     st.pyplot(fig)
+
 
 # Tab 4 - Job Description Keywords
 with tab4:
